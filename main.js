@@ -40,7 +40,7 @@ for (let customer of customers){
     newDiv.appendChild (customerBirthday)
 
     const customerSince = document.createElement("h4")
-    customerSince.innerText= `Customer since: `
+    customerSince.innerText= moment (customer.registered.date)
     newDiv.appendChild (customerSince)
 
     // newDiv.appendChild (customerImg)
