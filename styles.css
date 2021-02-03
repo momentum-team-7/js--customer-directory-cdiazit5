@@ -1,8 +1,17 @@
 .customers {
     display: flex;
     flex: wrap;
+    border: 5px black;
 
 }
 .profile {
     border: 5px black;
+}
+
+h3 {
+    text-transform: capitalize;
+}
+
+.customerName {
+    text-transform: capitalize;
 }

@@ -34,13 +34,13 @@ for (let customer of customers){
     newDiv.appendChild (customerAddress)
 
     const customerBirthday= document.createElement("h4")
-    customerBirthday.innerText = moment (customer.dob.date)
+    customerBirthday.innerText = moment (customer.dob.date).format("ll")
     // format ('ll')
     // displays [object Object] ^
     newDiv.appendChild (customerBirthday)
 
     const customerSince = document.createElement("h4")
-    customerSince.innerText= moment (customer.registered.date)
+    customerSince.innerText= moment(customer.registered.date).format("MMM Do YY")
     newDiv.appendChild (customerSince)
 
     // newDiv.appendChild (customerImg)
